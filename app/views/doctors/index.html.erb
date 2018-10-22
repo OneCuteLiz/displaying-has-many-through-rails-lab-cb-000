@@ -1,7 +1,11 @@
 <!-- displays each doctor's name, a link to their show page, and a count of their patients. -->
 
-<% @doctor.each do |doctor| %>
+<h1> Doctors </h1>
 
-	<%= doctor.name %>
+<ul>
+<% @doctors.each do |doctor| %>
+
+	<li> <%= link_to doctor.name, doctor %> </li> <br> 
 
 <% end %>
+</ul>
